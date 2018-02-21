@@ -1,0 +1,16 @@
+parser: babel-eslint
+extends:
+  - standard
+plugins:
+  - import
+rules:
+  comma-dangle: 0
+  valid-jsdoc:
+    - error
+    - matchDescription: ".+"
+      requireParamDescription: false
+      requireReturnDescription: false
+  import/no-unresolved: [2, {commonjs: false, amd: false}]
+env:
+  node: true
+  browser: false
